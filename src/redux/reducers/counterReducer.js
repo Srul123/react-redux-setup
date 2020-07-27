@@ -4,7 +4,7 @@ import {
 } from "../types";
 
 const initialState = {
-    counter: 0
+    count: 0
 };
 
 const counterReducer = (state = initialState, action) => {
@@ -12,12 +12,12 @@ const counterReducer = (state = initialState, action) => {
         case ADD_ONE:
             return {
                 ...state,
-                counter: state.counter + 1
+                count: state.count + 1
             };
         case SUBTRACT_ONE:
             return {
                 ...state,
-                counter: state.counter - 1
+                count: state.count - 1
             };
         default:
             return state;

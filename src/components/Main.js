@@ -6,11 +6,11 @@ import './Main.css';
 class Main extends Component {
 
     render() {
-        let {counter} = this.props.counter;
+        let {count} = this.props.counter;
         return (
             <div className="cover">
                 <div>
-                    Counter is: {counter}
+                    Counter is: {count}
                 </div>
                 <div>
                     <button onClick={() => this.props.addOneToCounter()}>Add one</button>
